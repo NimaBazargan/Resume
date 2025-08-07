@@ -9,4 +9,4 @@ context = {
 }
 
 def index_view(request):
-    return render(request, 'index.html', context)
+    return render(request, 'website/index.html', context)
