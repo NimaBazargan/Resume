@@ -1,0 +1,367 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Resume - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
+    rel="stylesheet">
+  <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/devicons/css/devicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/resume.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Start Bootstrap</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{% static 'img/profile1.jpg' %}" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">Biography and Contact Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#languages">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">{{name}}
+          <span class="text-primary">{{last_name}}</span>
+        </h1>
+        <div class="subheading mb-5">{{address}} · {{phone}} ·
+          <a href="mailto:name@email.com"> {{email}}</a>
+        </div>
+        <p class="mb-5">I have experience in programming with Python and Mango DB and I am also a math teacher. I want
+          to become a backend developer by learning Django.</p>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://linkedin.com/in/nima-b-2264b0115">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/NimaBazargan">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Math Teacher</h3>
+            <div class="subheading mb-3">Allameh Helli High School, Talash High School, Hekmat High School</div>
+            <p>I was a math teacher in the second grade of middle school, also math teacher in the third grade of high
+              school and pre-university in the humanities field.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2018 - September 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Academic Advisor</h3>
+            <div class="subheading mb-3">Talash High School, Hekmat High School</div>
+            <p>I was an academic advisor and helped students with their personal development.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2018 - September 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Student Representative </h3>
+            <div class="subheading mb-3">University of Tehran, Faculty of Entrepreneurship </div>
+            <p>I was a student representative at the Faculty of Entrepreneurship at the University of Tehran and
+              co-founder of Harmonica School, a place to teach entrepreneurship to students.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2017 - 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Data Developer</h3>
+            <div class="subheading mb-3">Water and Wastewater Company</div>
+            <p>At the Water and Wastewater Company, we used a non-relational database called Mango DB to perform
+              data-related tasks.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2020</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">University of Kharazmi</h3>
+            <div class="subheading mb-3">Bachelor of Science</div>
+            <div>Computer Science</div>
+            <p>GPA: 15.88</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2018 - July 2023</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Allameh Helli High School</h3>
+            <div class="subheading mb-3">Diploma</div>
+            <div>Mathematics and Physics </div>
+            <p>GPA: 19.86</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2012 - June 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Python Course</h3>
+            <div class="subheading mb-3">Datat Types-DateTime-Files-Exceptions-API-Database(mysql)-Object Oriented
+              Programming</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2025</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item">
+            <i class="devicons devicons-html5" title="html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-css3" title="css3"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-javascript" title="javascript"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-bootstrap" title="bootstrap"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-c-original" title="c"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-chrome" title="chrome"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-cplusplus-plain" title="c++"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-django" title="django"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-flask-original" title="flask"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-git" title="git"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-github" title="github"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-google-plain" title="google"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-java" title="java"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-jetbrains-plain" title="jetbrains"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-json-plain" title="json"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-jupyter-plain" title="jupyter"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-linkedin-plain" title="linkedin"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-matlab-plain" title="matlab"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-mongodb" title="mongodb"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-mysql" title="mysql"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-powershell-plain" title="powershell"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-pycharm-plain" title="pycharm"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-pypi-plain" title="pypi"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-python" title="python"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-selenium-original" title="selenium"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicon-vscode-plain" title="vscode"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Algorithem Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Statistics, Linear Algebra &amp; Graph Theory</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Debugging and testing</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Relational databases &amp; Entity relationship diagram</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Network fundamental</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="languages">
+      <div class="my-auto">
+        <h2 class="mb-5">Languages</h2>
+        <ul>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Persian</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            English</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="project">
+      <div class="my-auto">
+        <h2 class="mb-5">Project  &amp; Papers</h2>
+        <ul class = "fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Smart Port Automation Roadmap - An AI-Based Solution for implementing Smart Automation in ports, considering
+            Data Privacy, Security,
+            Sustainability and Cost Management -
+            Allameh Tabataba’i University-Tehran-Iran</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <div class="my-auto">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Be Fekr Sho Symposiums 2016 - A symposium to encourage teenage entrepreneurship </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - First Start-Up Weekend - Gramophone - First Full Audio Social Network in Iran 2015</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/resume.min.js' %}"></script>
+
+</body>
+
+</html>
